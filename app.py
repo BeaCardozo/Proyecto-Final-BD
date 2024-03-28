@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, Response, jsonify, redirect, url_for
-import templates.database as dbase  
-from templates.product import Product
+import database as dbase  
+from product import Product
 
 db = dbase.dbConnection()
 app = Flask(__name__, static_url_path='/static') 
